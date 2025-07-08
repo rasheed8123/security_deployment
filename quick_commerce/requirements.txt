@@ -14,8 +14,8 @@ requests==2.31.0
 # Frontend Dependencies
 streamlit==1.28.1
 plotly==5.17.0
-pandas==2.1.4
-numpy==1.25.2
+pandas==2.2.0
+numpy==1.26.4
 
 # Additional Dependencies
 python-dotenv==1.0.0 
