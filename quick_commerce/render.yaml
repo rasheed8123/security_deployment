@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: quick-commerce-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.7
+      - key: DATABASE_URL
+        value: sqlite:///./quick_commerce.db 
